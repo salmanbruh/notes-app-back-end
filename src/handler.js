@@ -37,7 +37,7 @@ const addNoteHandler = (request, h) => {
   return response;
 };
 
-const getAllNotesHandler = () => ({
+const getAllNotesHandler = (request, h) => h.response({
   status: 'success',
   data: {
     notes,
